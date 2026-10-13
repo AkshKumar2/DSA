@@ -23,7 +23,7 @@ public:
         }
         bool flag=true;
         ListNode* temp;
-        if(fast->next==nullptr)temp=slow->next;
+        if(fast->next==nullptr){temp=slow;s.push(slow->val);}
         else if(fast->next->next==nullptr){temp=slow->next;s.push(slow->val);}
         while(temp!=nullptr && !s.empty()){
             if(temp->val==s.top())s.pop();
