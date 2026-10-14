@@ -1,7 +1,7 @@
 class Solution {
 public:
     string reversePrefix(string word, char ch) {
-        stack<int> s;
+        stack<char> s;
         string r;
         int j=0;
         for(int i=0;i<word.size();i++){
